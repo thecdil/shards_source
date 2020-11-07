@@ -67,7 +67,7 @@ $( "#playPoem" ).click(function() {
     var poemLetterSounds = [];
     for (let i = 0; i < poemText.length; i++) {
         if (sounds[poemText[i]]) {
-            poemLetterSounds.push("{{ '/objects/' | relative_url }}" + sounds[poemText[i]]);
+            poemLetterSounds.push("{{ site.objects | relative_url }}" + sounds[poemText[i]]);
         }
     }
     if (letterSound) { letterSound.stop(); }
