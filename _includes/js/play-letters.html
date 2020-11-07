@@ -41,7 +41,7 @@ $("#poemArea").keypress(function(e) {
         if (sounds[inputKey]) {
             
             letterSound = new Howl({
-                src: ["{{ site.objects | relative_url }}" + sounds[inputKey]]
+                src: ["{{ site.objects | relative_url }}/" + sounds[inputKey]]
             });
             letterSound.play();
         }
@@ -67,7 +67,7 @@ $( "#playPoem" ).click(function() {
     var poemLetterSounds = [];
     for (let i = 0; i < poemText.length; i++) {
         if (sounds[poemText[i]]) {
-            poemLetterSounds.push("{{ site.objects | relative_url }}" + sounds[poemText[i]]);
+            poemLetterSounds.push("{{ site.objects | relative_url }}/" + sounds[poemText[i]]);
         }
     }
     if (letterSound) { letterSound.stop(); }
