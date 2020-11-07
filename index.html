@@ -1,0 +1,96 @@
+---
+layout: page
+title: What Glass Shards Are Called
+custom-foot: js/home.html
+---
+
+<div class="poem-block"> 
+
+    <h1 class="poem-title mb-4">What Glass Shards Are Called</h1>
+
+    <div class="poem-stanza">
+    <div class="poem-line">Named for a process: molten glass dripped into water will shatter.</div>
+    <div class="poem-line">Something about the molecular structures. Something about watching one become a thousand. </div>
+    </div>
+
+    <div class="poem-stanza">
+    <div class="poem-line">My father describes the process one afternoon at the old studio, across the lot </div>
+    <div class="poem-line">from where a ballet company stores their giant wooden Nutcrackers.</div>
+    </div>
+
+    <div class="poem-stanza">
+    <div class="poem-line">In the studio, he knows where to find each color, his jars lined up and packed with shards </div>
+    <div class="poem-line">to fill in the concave plaster molds. He tries to teach me how to arrange the colors, shapes.</div>
+    <div class="poem-line">Wants to share what life is his. </div>
+    </div>
+
+    <div class="poem-stanza text-right">
+    <div class="poem-line">I think that’s what you’re supposed to do with family.</div>
+    <div class="poem-line">You get choked up, otherwise, kitchen drains </div>
+    <div class="poem-line"> after washing out a pot of burned rice,</div>
+    <div class="poem-line">rain gutters crammed with leaves.</div>
+    </div>
+
+    <div class="poem-stanza">
+    <div class="poem-line">First it was sloping clay on the potter’s wheel. Now designing, molding, baking, mounting </div>
+    <div class="poem-line">slabs of glass on walls, pedestals, iron skeletons. It’s why he dropped out of college, or so he tells me. </div>
+    <div class="poem-line">Or he told himself. Or someone told him </div>
+    </div>
+
+    <div class="poem-stanza text-right">
+    <div class="poem-line">he wasn’t good enough at anything else. </div>
+    <div class="poem-line">His father used to buzzcut his hair </div>
+    <div class="poem-line">every summer. Practicality was all. </div>
+    <div class="poem-line">As soon as he moved out, my father grew </div>
+    <div class="poem-line">his hair into a long, red ponytail. </div>
+    <div class="poem-line">He lived in the studio, plaster under his nails,</div>
+    <div class="poem-line">checked the kilns in the middle of the night, learned how to create</div>
+    </div>
+
+    <div class="poem-stanza">
+    <div class="poem-line">a fusing of shapes into something, if not durable,</div>
+    <div class="poem-line">able to imagine solidity. A shaking of shards into the spirals and diamonds </div>
+    <div class="poem-line">and deckled edges of the mold, sun-tipped eyes settling down, holding each other as heat flares.</div>
+    </div>
+
+    <div class="poem-stanza">
+    <div class="poem-line">I cup my hands and he fills the bowl with azure and wheat, violet and umber.</div>
+    </div>
+
+    <div class="poem-stanza">
+    <div class="poem-line">If you don’t move, the shards are soft. </div>
+    <div class="poem-line">We watch their gathering until my hands are full of frit.</div>
+    </div>
+
+    <p class="blockquote-footer text-right mt-4">Emmy Newman</p>
+
+</div>
+
+<div id="wavePlayer" class="fixed-bottom mb-md-5 mx-md-5">
+    <div class="row">
+        <div id="waveControls" class="col-2">
+            <button class="btn btn-link btn-block mb-2" id="audio-play">
+                <span id="audio-status" class="fas fa-play display-1"></span><span class="sr-only">Play or Pause Audio</span>
+            </button>
+            <div class="dropdown">
+                <button class="btn btn-link btn-block dropdown-toggle" type="button" id="trackSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Track
+                </button>
+                <div class="dropdown-menu" aria-labelledby="trackSelect">
+                    <button class="dropdown-item track active" type="button" onclick="initWave('shards_final.mp3')">Shards composition</button>
+                    <button class="dropdown-item track" type="button" onclick="initWave('shards_001.m4a')">Shards reading</button>
+                    <button class="dropdown-item track" type="button" onclick="initWave('shards_033.mp3')">Alerted reading</button>
+                    <button class="dropdown-item track" type="button" onclick="initWave('shards_002.mp3')">Typed text</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <div id="audio-loading" class="d-none">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div id="waveform"></div>
+        </div>
+    </div>
+</div>

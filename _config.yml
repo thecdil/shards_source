@@ -1,0 +1,80 @@
+##########
+# collectionbuilder-sa
+# Jekyll Digital Collection Generator
+# https://github.com/CollectionBuilder/collectionbuilder-sa
+##########
+
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
+url: https://www.lib.uidaho.edu
+# path to location on the domain if necessary e.g. /digital/hjccc
+baseurl: /shards
+# location of code, the full url to your github repository
+source-code: https://github.com/CollectionBuilder/collectionbuilder-sa
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: What Glass Shards Are Called
+title-short: Shards
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: Poetry and Music Collaboration
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "A collaboration between composer Samson Matthews and Poet Emmy Newman"  
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: CollectionBuilder
+# Organization branding
+organization-name: "Center for Digital Inquiry and Learning"
+organization-link: https://cdil.lib.uidaho.edu/
+organization-logo-banner: https://cdil.lib.uidaho.edu/assets/img/logo.png #https://www.lib.uidaho.edu/digital/objects/hjccc/cdil-logo.png
+organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png # https://www.lib.uidaho.edu/digital/objects/hjccc/cdil-logo.png
+
+##########
+# COLLECTION SETTINGS
+#
+# provide location of the digital objects folder,
+# If using local folder, dir name with proceeding slash. If using external web location, provide full URL
+# objects: https://www.lib.uidaho.edu/digital/objects/samson
+objects: /objects
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
+metadata: glass_shards
+# page generation settings 
+# "data" value must be the name of the metadata file (other values should be not be changed)
+page_gen:
+  - data: 'glass_shards'
+    template: 'items'
+    name: 'objectid'
+    dir: 'items'
+    extension: 'html' 
+    filter: 'objectid'  
+
+##########
+# GOOGLE SERVICES [optional!]
+#
+# leave these blank or comment out to NOT include google code
+# if present, used to add analytics during "production" build only
+# google-analytics-id: "UA-74844011-1"
+# google-cse-id: "002151703305773322890:1pu3smhw1t8"
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+noindex: true 
+
+##########
+# BUILD SETTINGS 
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE]
+# compress CSS output
+sass:
+  style: compressed

@@ -1,0 +1,71 @@
+##########
+# CollectionBuilder Theme Customization
+# values set here help configure details of individual pages in the website
+##########
+
+##########
+# HOME PAGE
+#
+# featured image is used in home page banner and in meta markup to represent the collection
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+featured-image: shards_034
+
+
+##########
+# BROWSE PAGE
+#
+# see _data/browse-config.csv for field display options
+# fields given the "btn" option can be multivalued with ";" such as subjects.
+
+##########
+# ITEM PAGE
+#
+# see _data/metadata-config.csv to define the metadata fields that will display.
+browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
+
+##########
+# SUBJECTS PAGE
+#
+subjects-fields: subject;creator # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# LOCATIONS PAGE
+#
+locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# DATA 
+# 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "title,creator,description,source,format,poem_phrase_link"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "creator,format"
+
+##########
+# ADVANCED OPTIONS
+#
+
+# NAVBAR COLORS
+# navbar text color
+# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
+navbar-color: navbar-light
+# navbar background color
+# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+navbar-background: bg-white
+
+# BOOTSWATCH THEMES
+# You can replace the standard Bootstrap theme with a Bootswatch (https://github.com/thomaspark/bootswatch) option
+# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
+bootswatch: # leave blank or comment out for plain bootstrap
+
+# THEME FONTS
+base-font-size: 1.2em
+text-color: "#191919"
+link-color: "#17a2b8"
+base-font-family: "'Merriweather', serif;" # comment out for bootstrap defaults. e.g. Roboto
+font-cdn: <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">

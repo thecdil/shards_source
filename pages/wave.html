@@ -1,0 +1,33 @@
+---
+title: Wave
+layout: page
+permalink: /wave.html
+custom-foot: js/wave.html 
+---
+
+<div class="row">
+    <div id="waveControls" class="col-md-2">
+        <button class="btn btn-light btn-lg btn-block mb-2" id="audio-play">
+            <span id="audio-status" class="fas fa-play"></span><span class="sr-only">Play or Pause Audio</span>
+        </button>
+        <div class="dropdown">
+            <button class="btn btn-light btn-block dropdown-toggle" type="button" id="trackSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Track
+            </button>
+            <div class="dropdown-menu" aria-labelledby="trackSelect">
+                <button class="dropdown-item track active" type="button" onclick="initWave('shards_final.mp3')">Shards composition</button>
+                <button class="dropdown-item track" type="button" onclick="initWave('shards_001.m4a')">Shards reading</button>
+                <button class="dropdown-item track" type="button" onclick="initWave('shards_033.mp3')">Alerted reading</button>
+                <button class="dropdown-item track" type="button" onclick="initWave('shards_002.mp3')">Typed text</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div id="audio-loading" class="text-center d-none">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div id="waveform"></div>
+    </div>
+</div>

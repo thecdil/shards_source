@@ -1,0 +1,69 @@
+<script src="{{ '/assets/lib/wavesurfer.js' | relative_url }}"></script>
+<script>
+
+var wavesurfer; 
+
+function initWave(file) {
+    // show loading icon
+    $("#audio-loading").removeClass("d-none");
+    // remove existing wave if necessary
+    if (wavesurfer !== undefined) { wavesurfer.destroy(); }
+    // init wave
+    wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'violet',
+        progressColor: 'purple'
+    });
+    wavesurfer.on('ready', function () {
+        // hide loading icon
+        $("#audio-loading").addClass("d-none");
+        // play
+        wavesurfer.play();
+    });
+    wavesurfer.load('{{ site.objects | relative_url }}/' + file );
+    wavesurfer.on('pause', function () {
+        $("#audio-status").removeClass("fa-pause").addClass("fa-play");
+    });
+    wavesurfer.on('play', function () {
+        $("#audio-status").removeClass("fa-play").addClass("fa-pause");
+    });
+    
+}
+
+$("#audio-play").click(function () {
+    if (wavesurfer == undefined) {
+        initWave('shards_final.mp3');
+    } else {
+        wavesurfer.playPause();
+    }
+});
+
+
+/*
+    var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'violet',
+        progressColor: 'purple'
+    });
+    wavesurfer.on('ready', function () {
+        document.getElementById('audio-loading').style.display = 'none';
+        // play pause 
+        $("#audio-play").click(function () {
+            wavesurfer.playPause();
+        });
+    });
+    
+    wavesurfer.load('{{ "/objects/shards_final.mp3" | relative_url }}');
+    wavesurfer.on('pause', function () {
+        $("#audio-status").removeClass("fa-pause").addClass("fa-play");
+    });
+    wavesurfer.on('play', function () {
+        $("#audio-status").removeClass("fa-play").addClass("fa-pause");
+    });
+    function track(file) {
+        wavesurfer.load('{{ "/objects/" | relative_url }}' + file );
+        //$(".track").removeClass(".active");
+        //$(this).addClass("active");
+    }
+*/
+</script>

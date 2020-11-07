@@ -1,0 +1,27 @@
+/* poem styles */ 
+.poem-block {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto 7rem;
+}
+.poem-stanza {
+    padding-bottom: 28px;
+}
+.poem-line{  
+    text-indent: -32px;
+    margin: 0 0 0 32px;
+    line-height:28px;
+}
+.poem-indentedline{  
+    text-indent: -32px;
+    margin: 0 0 0 32px;
+    line-height:28px;
+    padding-left:4em;
+}
+
+/* audio player */
+#waveControls {
+    .btn-link {
+        color: #341671;
+    }
+}
