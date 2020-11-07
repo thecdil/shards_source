@@ -3,7 +3,6 @@
 
 <script>
 
-var test = document.getElementById("sound");
 /* define sound files */
 var sounds = { 
     "a":"a-sound.mp3",
@@ -40,10 +39,9 @@ $("#poemArea").keypress(function(e) {
     if (e.which !== 0 && $("#playLive").is(':checked')) {
         var inputKey = String.fromCharCode(e.which);
         if (sounds[inputKey]) {
-            test.innerHTML = "sound was: /objects/" + sounds[inputKey];
             
             letterSound = new Howl({
-                src: ["{{ '/objects/' | relative_url }}" + sounds[inputKey]]
+                src: ["{{ site.objects | relative_url }}" + sounds[inputKey]]
             });
             letterSound.play();
         }
