@@ -4,7 +4,7 @@ layout: about
 permalink: /about.html
 ---
 
-# About the Composition
+# "What Glass Shards Are Called" <br>About the Composition
 
 <p class="blockquote-footer">Samson Matthews</p>
 
