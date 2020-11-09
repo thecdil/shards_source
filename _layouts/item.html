@@ -38,6 +38,8 @@ gallery: true
                             <source src="{% include download/item.html %}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        {%- elsif page.format contains 'pdf' -%}
+                        <a href="{% include download/item.html %}" target="_blank"><img src="{{ '/assets/img/pdf.svg' | relative_url }}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
                         {%- else -%}
                         <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
                         {%- endif -%}
