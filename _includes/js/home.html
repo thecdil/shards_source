@@ -1,8 +1,8 @@
 <script src="{{ '/assets/lib/wavesurfer.js' | relative_url }}"></script>
 <script>
 
+// create wave and play sound function
 var wavesurfer; 
-
 function initWave(file) {
     // show loading icon
     $("#audio-loading").removeClass("d-none");
@@ -38,6 +38,21 @@ $("#audio-play").click(function () {
     } else {
         wavesurfer.playPause();
     }
+});
+
+// annotations
+{% assign annotations = site.data[site.metadata] | where_exp: 'i','i.poem_phrase_link' %}
+var annotationFiles = {
+    {% for a in annotations %}{{ a.objectid | jsonify }}: {{ a.filename | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+};
+$(".annotation").click(function() {
+    var objectid = $(this).attr("id");
+    initWave(annotationFiles[objectid]);
+});
+// toggle annotation highlight
+$("#annotation-toggle").click(function () {
+    $(".annotation").toggleClass("annotation-underline");
 });
 
 </script>
