@@ -68,23 +68,23 @@ custom-foot: js/home.html
 
 <div id="wavePlayer" class="fixed-bottom mb-md-5 mx-md-5">
     <div class="row">
-        <div id="waveControls" class="col-2">
-            <button class="btn btn-link btn-block mb-2" id="audio-play">
+        <div id="waveControls" class="col-2 text-center">
+            <button class="btn btn-link mb-2" id="audio-play" title="Play or Pause Audio" >
                 <span id="audio-status" class="fas fa-play display-1"></span><span class="sr-only">Play or Pause Audio</span>
             </button>
             <div class="dropdown">
-                <button class="btn btn-link btn-block dropdown-toggle" type="button" id="trackSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-link dropdown-toggle" type="button" id="trackSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Tracks
                 </button>
                 <div class="dropdown-menu" aria-labelledby="trackSelect">
-                    <button class="dropdown-item track active" type="button" onclick="initWave('shards_final.mp3')">Shards composition</button>
-                    <button class="dropdown-item track" type="button" onclick="initWave('shards_001.m4a')">Shards reading</button>
-                    <button class="dropdown-item track" type="button" onclick="initWave('shards_033.mp3')">Alerted reading</button>
-                    <button class="dropdown-item track" type="button" onclick="initWave('shards_002.mp3')">Typed text</button>
+                    <button class="dropdown-item track annotation active" type="button" id="shards_final">Shards composition</button>
+                    <button class="dropdown-item track annotation" type="button" id="shards_001">Shards reading</button>
+                    <button class="dropdown-item track annotation" type="button" id="shards_033">Alerted reading</button>
+                    <button class="dropdown-item track annotation" type="button" id="shards_002">Typed text</button>
                 </div>
             </div>
-            <button class="btn btn-link btn-sm btn-block mt-2" id="annotation-toggle">
-                Annotations
+            <button class="btn btn-link btn-sm mt-2" title="Toggle Sound Annotations" id="annotation-toggle">
+                <small>Sound Annotations</small>
             </button>
         </div>
         <div class="col-10">

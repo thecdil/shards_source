@@ -12,7 +12,7 @@ function initWave(file) {
     wavesurfer = WaveSurfer.create({
         container: '#waveform',
         waveColor: 'violet',
-        progressColor: 'purple'
+        progressColor: '#341671'
     });
     wavesurfer.on('ready', function () {
         // hide loading icon
@@ -41,18 +41,20 @@ $("#audio-play").click(function () {
 });
 
 // annotations
-{% assign annotations = site.data[site.metadata] | where_exp: 'i','i.poem_phrase_link' %}
+{% assign annotations = site.data[site.metadata] | where_exp: 'i','i.format contains "audio"' %}
 var annotationFiles = {
     {% for a in annotations %}{{ a.objectid | jsonify }}: {{ a.filename | jsonify }}{% unless forloop.last %},{% endunless %}
     {% endfor %}
 };
 $(".annotation").click(function() {
+    $(".annotation").removeClass("active");
+    $(this).addClass("active");
     var objectid = $(this).attr("id");
     initWave(annotationFiles[objectid]);
 });
 // toggle annotation highlight
 $("#annotation-toggle").click(function () {
-    $(".annotation").toggleClass("annotation-underline");
+    $("span.annotation").toggleClass("annotation-underline");
 });
 
 </script>

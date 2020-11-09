@@ -28,4 +28,8 @@
 /* annotations */
 .annotation { cursor: pointer; }
 .annotation-underline { border-bottom: solid 1px violet; };
+.annotation.active { 
+    color: #341671; 
+    border-bottom: solid 1px #341671;
+}
 .text-underline { text-decoration: underline; }
