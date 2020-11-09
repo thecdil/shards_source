@@ -1,0 +1,18 @@
+{% if page.theme.browse-buttons == true %}{% include js/arrow-page-control-js.html %}{% endif %}
+{%- if page.format contains 'audio' -%}
+<script src="{{ '/assets/lib/plyr/plyr.min.js' | relative_url }}"></script>
+<script>
+    const player = new Plyr('#plyr');
+</script>
+{% elsif page.format contains 'image' %}
+<script src="{{ '/assets/lib/jquery.mousewheel.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/lightgallery/js/lightgallery-all.min.js' | relative_url }}"></script>
+<script>
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+            selector: '.gallery-img',
+            thumbnail:true
+        }); 
+    });
+</script>
+{% endif %}
