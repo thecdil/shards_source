@@ -25,11 +25,15 @@ This last draft that I created, I'll admit was not as finished as I wanted it to
 The reason I say that this piece has been strung out yet clumped is because I feel like every little piece of the puzzle has slowly shown itself, but I feel like much of the work has happened in bursts. So, there are these little chunks/bursts of time, energy, and creation that all link up to creative this final product. I'm kind of visualizing it as a sort of ring with dots, or a figurative crown with different points, some bigger than others. I don't know if this makes any sense, this is just what my brain thinks about all of this right now.
  
 ## Context of the Composition
- 
+
+<p class="blockquote-footer">Samson Matthews</p>
+
 This piece starts with Emmy and her Dad, the relationship that she fostered with him, and the way that her family life has cultivated around the love of creation. There is a sanctity in making things that is at the essence of the poem, and at the core of her relationship with her dad. This sanctity ultimately drove the inception of this poem. And then she shared this poem with me, and offered me a glimpse into this relationship, and the opportunity to create atop this sacredness that she was already familiar with. There are mentions of her grandfather, and her dad's relationship with him. Deeply embedded in this poem is the relationship between family and creation, whether that creation is art, a relationship, burning food, or the process of doing something together. I guess what I'm trying to portray in my interpretations is the convolutedness, yet clarity there is in naming such sanctity. I am in relationship with these people in such a small way, yet I feel it. I am so far away from closeness that I don't even know Emmy's dad's name, yet I am able to encompass the same emotional space that they occupy. This emotional space then extends to those that I hold dear to me, and the loved ones that I share sacredness with. 
 
 ## About the Website
 
-The audio and composition for *What Glass Shards Are Called* were completed by Samson Matthews during a 2020 summer fellowship at [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/).
-Samson worked with CDIL to develop the website concept, prepare objects and metadata, and write content.
-CDIL faculty developed the website using the [CollectionBuilder template](https://collectionbuilder.github.io/) with customizations for playing featured audio.
+The audio and composition for *What Glass Shards Are Called* were completed by Samson Matthews during a 2020 summer fellowship at [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) (CDIL).
+
+Samson worked with CDIL faculty to develop the website concept, prepare objects and metadata, and write content.
+Evan Peter Williamson developed the website based on the [CollectionBuilder template](https://collectionbuilder.github.io/), with customizations for playing the audio directly linked to the text using [wavesurfer.js](https://wavesurfer-js.org/). 
+Interactive features are designed to allow the composition to be presented in a variety of forms, and coexist as a collection of components.
