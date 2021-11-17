@@ -2,7 +2,7 @@
 .poem-block {
     max-width: 1000px;
     display: block;
-    margin: 0 auto 7rem;
+    margin: 0 auto 10rem;
 }
 .poem-stanza {
     padding-bottom: 28px;
@@ -22,14 +22,24 @@
 /* audio player */
 #waveControls {
     .btn-link {
-        color: #341671;
+        color: #31137C;
     }
 }
 /* annotations */
 .annotation { cursor: pointer; }
-.annotation-underline { border-bottom: solid 1px violet; };
+.annotation-underline { border-bottom: solid 1px #31137C; };
 .annotation.active { 
-    color: #341671; 
-    border-bottom: solid 1px #341671;
+    color: #7C135E; 
+    border-bottom: solid 1px #7C135E;
 }
 .text-underline { text-decoration: underline; }
+.track.annotation.active {
+    color: white;
+    background-color: #31137C;
+}
+/* footer */ 
+.footer-nav .nav-link.active { 
+    border: solid 1px #7C135E;
+    border-radius: .25em;
+}
+#scroll-to-top { color: $link-color; }
