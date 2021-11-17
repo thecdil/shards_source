@@ -4,4 +4,5 @@ layout: browse
 permalink: /browse.html
 ---
 
-## Browse Project Files
+# "What Glass Shards Are Called" Project Files
+{:.mb-4}
