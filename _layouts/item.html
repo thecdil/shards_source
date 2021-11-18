@@ -1,6 +1,5 @@
 ---
 layout: default
-gallery: true
 ---
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
 <div class="container py-3">
@@ -27,7 +26,7 @@ gallery: true
                 <div class="mt-4">
                     <p>
                         {%- if page.format contains 'audio' -%}
-                        <audio controls class="w-100">
+                        <audio id="plyr" controls class="w-100">
                             <source src="{% include download/item.html %}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
