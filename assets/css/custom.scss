@@ -7,7 +7,10 @@
 $base-font-family: {{ site.data.theme.base-font-family | default: '""' }};
 $base-font-size: {{ site.data.theme.base-font-size | default: '""' }};
 $text-color: {{ site.data.theme.text-color | default: '""' }};
-$link-color: #135E7C;
+$link-color: #007C77; //#135E7C;
+
+$color-dark: {{ site.data.theme.color-dark }}; //#31137C;
+$color-light: {{ site.data.theme.color-light }}; // #7C135E
 
 // Width of the content area
 $content-width:    1800px;

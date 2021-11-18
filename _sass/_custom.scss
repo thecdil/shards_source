@@ -22,24 +22,24 @@
 /* audio player */
 #waveControls {
     .btn-link {
-        color: #31137C;
+        color: $color-dark;
     }
 }
 /* annotations */
 .annotation { cursor: pointer; }
-.annotation-underline { border-bottom: solid 1px #31137C; };
+.annotation-underline { border-bottom: solid 1px $color-light; };
 .annotation.active { 
-    color: #7C135E; 
-    border-bottom: solid 1px #7C135E;
+    color: $color-light; 
+    border-bottom: solid 1px $color-light;
 }
 .text-underline { text-decoration: underline; }
 .track.annotation.active {
     color: white;
-    background-color: #31137C;
+    background-color: $color-dark;
 }
 /* footer */ 
 .footer-nav .nav-link.active { 
-    border: solid 1px #7C135E;
+    border: solid 1px $color-light;
     border-radius: .25em;
 }
 #scroll-to-top { color: $link-color; }

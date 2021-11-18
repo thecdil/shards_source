@@ -11,8 +11,8 @@ function initWave(file) {
     // init wave
     wavesurfer = WaveSurfer.create({
         container: '#waveform',
-        waveColor: '#7C135E',
-        progressColor: '#31137C'
+        waveColor: '{{ site.data.theme.color-light }}',
+        progressColor: '{{ site.data.theme.color-dark }}'
     });
     wavesurfer.on('ready', function () {
         // hide loading icon

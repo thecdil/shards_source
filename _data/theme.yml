@@ -3,6 +3,9 @@
 # values set here help configure details of individual pages in the website
 ##########
 
+color-dark: '#4C1A57'
+color-light: '#FF3CC7'
+
 ##########
 # HOME PAGE
 #
