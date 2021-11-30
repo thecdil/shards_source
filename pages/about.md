@@ -6,7 +6,7 @@ permalink: /about.html
 
 # "What Glass Shards Are Called" 
 
-This website presents the poem and musical composition *What Glass Shards Are Called*, a collaboration between poet Emmy Newman and composer Samson Matthews.
+This project presents the poem and musical composition *What Glass Shards Are Called*, a collaboration between poet Emmy Newman and composer Samson Matthews.
 
 ## About the Composition
 
@@ -30,10 +30,12 @@ The reason I say that this piece has been strung out yet clumped is because I fe
 
 This piece starts with Emmy and her Dad, the relationship that she fostered with him, and the way that her family life has cultivated around the love of creation. There is a sanctity in making things that is at the essence of the poem, and at the core of her relationship with her dad. This sanctity ultimately drove the inception of this poem. And then she shared this poem with me, and offered me a glimpse into this relationship, and the opportunity to create atop this sacredness that she was already familiar with. There are mentions of her grandfather, and her dad's relationship with him. Deeply embedded in this poem is the relationship between family and creation, whether that creation is art, a relationship, burning food, or the process of doing something together. I guess what I'm trying to portray in my interpretations is the convolutedness, yet clarity there is in naming such sanctity. I am in relationship with these people in such a small way, yet I feel it. I am so far away from closeness that I don't even know Emmy's dad's name, yet I am able to encompass the same emotional space that they occupy. This emotional space then extends to those that I hold dear to me, and the loved ones that I share sacredness with. 
 
+[<span class="fas fa-external-link-alt"></span> About Samson Matthews](https://web.archive.org/web/20211118200645/https://www.samsonmatthews.com/about-matthews){:target="_blank" rel="noopener"} 
+
 ## About the Website
 
 The audio and composition for *What Glass Shards Are Called* were completed by Samson Matthews during a 2020 summer fellowship at [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) (CDIL).
 
 Samson worked with CDIL faculty to develop the website concept, prepare objects and metadata, and write content.
-Evan Peter Williamson developed the website based on the [CollectionBuilder template](https://collectionbuilder.github.io/), with customizations for playing the audio directly linked to the text using [wavesurfer.js](https://wavesurfer-js.org/). 
+Evan Peter Williamson developed the website based on a [CollectionBuilder template](https://collectionbuilder.github.io/), with customizations for playing the audio directly linked to the text using [wavesurfer.js](https://wavesurfer-js.org/) and [howler.js](https://howlerjs.com/). 
 Interactive features are designed to allow the composition to be presented in a variety of forms, and coexist as a collection of components.
